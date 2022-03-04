@@ -1,0 +1,12 @@
+name: voicechat_broadcast
+version: ${version}
+main: de.maxhenkel.voicechat_broadcast.VoicechatBroadcast
+api-version: ${bukkit_api_version}
+prefix: voicechat_broadcast
+authors: [ "Max Henkel" ]
+description: A simple broadcast plugin for Simple Voice Chat
+website: https://modrepo.de
+permissions:
+  voicechat_broadcast.broadcast:
+    description: Allows to broadcast your voice
+depend: [ voicechat ]
