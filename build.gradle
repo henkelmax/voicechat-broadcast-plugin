@@ -20,9 +20,9 @@ dependencies {
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
     // To use this dependency, you need to compile bukkit by yourself
     // See https://www.spigotmc.org/wiki/buildtools/
-    implementation "org.bukkit:craftbukkit:${bukkit_version}"
+    // implementation "org.bukkit:craftbukkit:${bukkit_version}"
     // Use this dependency if you don't want to compile bukkit
-    // implementation "io.papermc.paper:paper-api:${bukkit_version}"
+    implementation "io.papermc.paper:paper-api:${bukkit_version}"
     implementation "de.maxhenkel.voicechat:voicechat-api:${voicechat_api_version}"
 }
 
@@ -33,8 +33,8 @@ repositories {
         url = 'https://maven.maxhenkel.de/repository/public'
     }
     // You need this maven repository if you want to use the paper dependency
-    // maven {
-    //     url = uri("https://papermc.io/repo/repository/maven-public/")
-    // }
+    maven {
+        url = uri("https://papermc.io/repo/repository/maven-public/")
+    }
     mavenLocal()
 }
